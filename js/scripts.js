@@ -4,10 +4,8 @@ $(document).foundation();
 // Your Awesome Scripts!
 $(document).ready(function(){
 
-
-	$(document).ready(function() {
   $.simpleWeather({
-    location: 'Austin, TX',
+    location: 'Cheney, WA',
     woeid: '',
     unit: 'f',
     success: function(weather) {
