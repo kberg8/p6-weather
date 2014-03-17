@@ -2,7 +2,10 @@
 //$(document).foundation();
 
 // Your Awesome Scripts!
-$(document).ready(function(){
+//$(document).ready(function(){
+$('#getWeather button').on('click', function() {
+
+  var zipcode = $('#getWeather input').val();
 
 	$.simpleWeather({
     
@@ -30,13 +33,13 @@ $(document).ready(function(){
     },
     
     error: function(error) {
-      $("#weather").html('<p>'+error+'</p>');
+      $("#getWeather").html('<p>'+error+'</p>');
     }
   
   });
 
 
 
-	console.log('Page Loaded. Lets Do this!');
+	console.log('Page Loaded.');
 
 }); 
