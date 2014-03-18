@@ -1,45 +1,51 @@
 // Make Foundation Go!
-//$(document).foundation();
+$(document).foundation();
 
 // Your Awesome Scripts!
-//$(document).ready(function(){
-$('#getWeather button').on('click', function() {
 
-  var zipcode = $('#getWeather input').val();
-
-	$.simpleWeather({
+  $('button').on('click', function() {
+  
+  // 1. Get & store entered zipcode
+  var zipcode = $('#getWeather').val();
+  
+  // 2. Pass weather into _simpleWeather()_ object
+  $.simpleWeather({
     
-    location: '99203',
-    
+    location: zipcode,
+  
     success: function(weather) {
       
-      // Get & Store Weather Data
-      // html = '<h2><i class="icon-' + weather.code+'"></i> ' + weather.temp +'&deg;' + weather.units.temp+'</h2>';
-      var temp, tomHi, tomLo, cityAndState; 
-
-      temp = weather.temp + '<span> f</span>';
-      tomHi = weather.tomorrow.high;
-      tomLo = weather.tomorrow.low;
-      cityAndState = weather.city + ' , ' + weather.region;
-
-      console.log(cityAndState);
-
-      // Display Weather
+      // Get & store temperature
+      var temp = weather.temp;
+      // Get & store city
+      var city = weather.city;
+      // Get & store currently
+      var currently = weather.currently;
+      var code = '<img src=' + weather.image + '>';
+      var temp = weather.temp + '&deg;' + weather.units.temp;
+      
+      // Output to hooks in HTML
+      $('.code').html(code);
       $('.temp').html(temp);
-      $('.tomHi').html(tomHi);
-      $('.tomLo').html(tomLo);
-      $('.cityAndState').html(cityAndState);
+      $('.city').html(city);
+      $('.currently').html(currently);
+      
 
+      // See console for all properties of object
+      console.log(weather);
     },
-    
+  
     error: function(error) {
-      $("#getWeather").html('<p>'+error+'</p>');
+      $('body').html('<p>' + error + '</p>');
     }
   
   });
+  
+  // 3. Reset input value
+  $('#getWeather').val('');
+  
+});
 
 
 
-	console.log('Page Loaded.');
 
-}); 

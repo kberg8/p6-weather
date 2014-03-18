@@ -1,4 +1,56 @@
-h1 {
-	font-size: 4em;
-	color: orange;
+body{
+	background: #1192d3;
+	color: white;
 }
+
+button{
+	background: white;
+	color: black;
+	text-align: center;
+	width: 100%;
+
+}
+
+ul{
+	width: 100%;
+}
+
+li{
+	list-style: none;
+	text-align: center;
+	font-size: 50px;
+}
+
+.city{
+	font-size: 20px;
+	text-align: center;
+}
+
+.currently{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+}
+
+p{
+	text-align: center;
+
+}
+
+img{
+	max-height: 100%;
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 50px;
+
+}
+
+
+
