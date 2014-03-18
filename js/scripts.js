@@ -33,8 +33,6 @@ $(document).foundation();
       var sunrise = '<i class="wi-horizon-alt"></i> ' + weather.sunrise;
       var sunset = '<i class="wi-horizon"></i> ' + weather.sunset; 
 
-      var link = weather.link;
-
       // Output to hooks in HTML
       $('.code').html(code);
       $('.temp').html(temp);
@@ -46,7 +44,6 @@ $(document).foundation();
       $('.high').html(high);
       $('.sunrise').html(sunrise);
       $('.sunset').html(sunset);
-      $('link').html(link);
 
 
 
