@@ -1,55 +1,87 @@
 body{
-	background: #1192d3;
+	background: black;
 	color: white;
+	font-family: 'Nobile', sans-serif;
+}
+
+#getWeather {
+	width: 100%;
 }
 
 button{
 	background: white;
 	color: black;
+	font-family: 'Nobile', sans-serif;
+	padding: 10px 5px;
 	text-align: center;
 	width: 100%;
+}
 
+button:hover {
+	background-color: #0099CC;
 }
 
 ul{
+	font-family: 'Nobile', sans-serif;
 	width: 100%;
 }
 
 li{
+	font-family: 'Nobile', sans-serif;
 	list-style: none;
 	text-align: center;
 	font-size: 50px;
 }
 
 .city{
+	font-family: 'Nobile', sans-serif;
 	font-size: 20px;
 	text-align: center;
 }
 
 .currently{
+	font-family: 'Nobile', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	margin-bottom: 20px;
 }
 
+.wind, 
+.direction {
+	font-size: 20px;
+}
+
+.low,
+.high {
+	font-size: 26px;
+	padding: 20px;
+}
+
+.sunrise,
+.sunset {
+	font-size: 26px;
+}
+
 h1{
-	color: white;
+	color: #0099CC;
+	font-family: 'Nobile', sans-serif;
 	text-align: center;
 	margin-top: 50px;
 }
 
 p{
+	font-family: 'Nobile', sans-serif;
 	text-align: center;
 
 }
 
 img{
+	display: inline-block;
+	font-family: 'Nobile', sans-serif;
+	margin-left: 50px;
 	max-height: 100%;
 	width: auto;
-	display: inline-block;
 	vertical-align: middle;
-	margin-left: 50px;
-
 }
 
 

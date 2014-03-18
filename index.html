@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P6: Weather App</title>
+    <title>Weather App</title>
 
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/weather-icons.css" />
+    <link href='http://fonts.googleapis.com/css?family=Nobile:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css" />
     
     <script src="js/vendor/modernizr.js"></script>
@@ -14,14 +15,17 @@
   <body>
     
     <div class='columns small-12'>
-      <h1>Check the Weather!</h1>
-      <p>Enter your zip code below to check the weather near you!</p>
+      <h1>Weather Forecast</h1>
+      <p>Enter your zip code below</p>
     </div>
 
-<div class="columns small-12">
-          <input type="text" id="getWeather"/>
-          <button>Search</button>
-      </div>
+    <div class="columns small-8">
+       <input type="text" id="getWeather" placeholder="Type City or Zip Here"/>
+    </div>
+
+    <div class="columns small-4">
+          <button>Forecast</button>
+    </div>
 
 
 <div class="row">
@@ -30,10 +34,15 @@
         <li class="code columns small-12"></li>
         <li class="city columns small-12"> </li>
         <li class="currently columns small-12"></li>
+        <li class="wind columns small-12"></li>
+        <li class="direction columns small-12"></li>
+        <li class="low columns small-6"></li>
+        <li class="high columns small-6"></li>
+        <li class="sunrise columns small-6"></li>
+        <li class="sunset columns small-6"></li>
       </ul>
 </div>
-
-       
+      
       
 </div>
      
